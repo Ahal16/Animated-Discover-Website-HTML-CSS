@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 8px 8%;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    color:#21c0ec;
+    font-family: sail; 
+    cursor: pointer; 
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin: 10px 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family:'Times New Roman';
+    color: #fff;
+    font-size:larger;
+    text-transform: uppercase;
+    transition: o.4 ease-in-out;
+}
+nav ul li a:hover{
+    color: #21c0ec;
+}
+nav .btn{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #21c0ec;
+    font-family: 'Times New Roman';
+    font-size:large;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: .4s ease;
+}
+.btn img{
+    width:20px;
+    margin-right: 10px;
+}
+.btn:hover{
+    background-color:black;
+}
+.content{
+    margin-top: 10%;
+    color: #fff;
+    max-width: 620px;
+}
+.content h1{
+    font-size: 55px;
+    font-family:'Times New Roman';
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 24px;
+}
+.content span{
+    color:transparent;
+    font-family:'Times New Roman';
+    font-weight: 500;
+    -webkit-text-stroke: 1px #21c0ec;
+}
+.content p{
+    font-size: 18px;
+    font-family:'Times New Roman';
+    line-height: 32px;
+}
+.arrow-icons{
+    margin-top: 40px;
+    display: flex;
+}
+.arrow-icons img{
+    width: 40px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+.arrow-icons img:hover{
+    color: #21c0ec;
+    transform: translateY(-10px);
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.9s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.icons i{
+    color: #fff;
+}
+.icons{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+.icons ul{
+    flex: 1;
+    text-align: right;
+}
+.icons ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 45px;
+}
+.icons ul li i{
+    text-decoration: none;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+.icons ul li i:hover{
+    color: #21c0ec;
+    transform: translateY(-10px);
+}
